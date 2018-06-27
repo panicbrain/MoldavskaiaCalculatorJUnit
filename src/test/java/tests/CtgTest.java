@@ -23,7 +23,7 @@ public class CtgTest extends TestBase {
         double result = calculator.ctg(a);
         int resultOfCompareResults = Double.compare(result, expectedResult);
         assertTrue(resultOfCompareResults == 0, "Invalid result of ctg function");
-      }
+    }
 
     @DisplayName("Should return POSITIVE_INFINITY when argument is zero")
     @Test

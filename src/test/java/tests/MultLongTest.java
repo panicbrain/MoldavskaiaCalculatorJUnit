@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MultLongTest extends TestBase {
-    @DisplayName("Should calculate the correct result of multiplication of double type number")
+    @DisplayName("Should calculate the correct result of multiplication of long type number")
     @ParameterizedTest(name = "{index} => a = {0}, b = {1}, mult = {2}")
     @CsvSource({
             "5, 10, 50",

@@ -20,7 +20,7 @@ public class IsNegativeTest extends TestBase {
         assertEquals(expectedResult, result, "Invalid result of sign verification");
     }
 
-    @DisplayName("Should return true if the number isn't negative")
+    @DisplayName("Should return false if the number isn't negative")
     @ParameterizedTest(name = "{index} => a = {0}, isNegative = {1}")
     @CsvSource({
             "1, false",

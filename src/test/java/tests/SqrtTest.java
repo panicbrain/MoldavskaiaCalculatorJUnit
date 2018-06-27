@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import static java.lang.Double.NaN;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -18,17 +19,16 @@ public class SqrtTest extends TestBase {
             "400, 20",
             "1.44, 1.2",
     })
-    public void sqrtTest(double a, double expectedResult){
+    public void sqrtTest(double a, double expectedResult) {
         double result = calculator.sqrt(a);
-        assertEquals(result, expectedResult, "Invalid result of sqrt action");
+        assertEquals(expectedResult, result, "Invalid result of sqrt action");
     }
 
-  @Test
-    public void sqrtOfNegativeNumberTest(){
-      Throwable exception = assertThrows(Exception.class,
-              () -> {
-                  calculator.sqrt(-25);
-              });
+    @DisplayName("Should return NaN if the argument is negative")
+    @Test
+    public void sqrtOfNegativeNumberTest() {
+        double result = calculator.sqrt(-25);
+        assertEquals(NaN, result,  "Invalid result of sqrt action");
     }
 
 

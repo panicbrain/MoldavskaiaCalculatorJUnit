@@ -19,6 +19,7 @@ public class SinusTest extends TestBase {
     })
     public void SinTest(double a, double expectedResult) {
         double result = calculator.sin(a);
-        assertTrue((expectedResult - result) < 0.0001, "Invalid result of sin function");
+        int resultOfCompareResults = Double.compare(result, expectedResult);
+        assertTrue(resultOfCompareResults == 0, "Invalid result of sin function");
     }
 }

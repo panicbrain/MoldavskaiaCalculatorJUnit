@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SummaryLongTest extends TestBase {
 
-    @DisplayName("Should calculate the correct sum")
+    @DisplayName("Should calculate the correct sum of long type number")
     @ParameterizedTest(name = "{index} => a = {0}, b = {1}, sum = {2}")
     @CsvSource({
             "5, 10, 15",

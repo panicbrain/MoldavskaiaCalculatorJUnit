@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SummaryDoubleTest extends TestBase {
 
-    @DisplayName("Should calculate the correct sum with double type number")
+    @DisplayName("Should calculate the correct sum of double type number")
     @ParameterizedTest(name = "{index} => a = {0}, b = {1}, sum = {2}")
     @CsvSource({
             "5, 10, 15",

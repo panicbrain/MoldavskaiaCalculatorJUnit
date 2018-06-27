@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MultDoubleTest extends TestBase {
-    @DisplayName("Should calculate the correct subtraction result with double type number")
+    @DisplayName("Should calculate the correct multiplication result with double type number")
     @ParameterizedTest(name = "{index} => a = {0}, b = {1}, mult = {2}")
     @CsvSource({
             "5.5, 10, 55",
@@ -24,6 +24,6 @@ public class MultDoubleTest extends TestBase {
     })
     public void multiplicationDoubleTest(double a, double b, double expectedResult) {
         double result = calculator.mult(a, b);
-        assertEquals(expectedResult, result, "Invalid result of double summary");
+        assertEquals(expectedResult, result, "Invalid result of double multiplication");
     }
 }
