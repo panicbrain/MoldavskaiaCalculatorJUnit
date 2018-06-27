@@ -23,6 +23,6 @@ class SummaryDoubleTest extends TestBase {
     })
     void summaryDoubleTest(double a, double b, double expectedResult) {
         double result = calculator.sum(a, b);
-        assertEquals(result, expectedResult, "Invalid result of double summary");
+        assertEquals(expectedResult, result, "Invalid result of double summary");
     }
 }

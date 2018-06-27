@@ -24,7 +24,7 @@ public class SubtractionLongTest extends TestBase {
     })
     public void subtractionLongTest(long a, long b, long expectedResult){
         long result = calculator.sub(a, b);
-        assertEquals(result, expectedResult, "Invalid result of long subtraction");
+        assertEquals(expectedResult, result, "Invalid result of long subtraction");
     }
 
 
